@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="ui/public/aHhOPd_w_400x400.jpg" alt="ENIZZY TRADER" width="120" />
+<img src="ui/public/6d8bfd4c-bf4c-46af-b2a6-de19f7273ed8.png" alt="ENIZZY TRADER" width="120" />
 
 # ENIZZY TRADER
 
