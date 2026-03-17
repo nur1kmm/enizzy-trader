@@ -1,21 +1,23 @@
 <div align="center">
 
-<img src="ui/public/aHhOPd_w_400x400.jpg" alt="KIBBY TRADER" width="120" />
+<img src="ui/public/aHhOPd_w_400x400.jpg" alt="ENIZZY TRADER" width="120" />
 
-# KIBBY TRADER
+# ENIZZY TRADER
 
-**Autonomous AI trading agent on Solana**
+**Autonomous AI trading agent — Solana & BSC**
 
 [![Live](https://img.shields.io/badge/Live%20Dashboard-online-00ff94?style=for-the-badge&logo=vercel&logoColor=white)](https://ui-zeta-roan.vercel.app)
 [![Railway](https://img.shields.io/badge/Backend-Railway-6c42df?style=for-the-badge&logo=railway&logoColor=white)](https://actavis-agent-production.up.railway.app/health)
-[![Model](https://img.shields.io/badge/AI-GPT--4o%20%2F%20Claude%20Opus%204.6-74aa9c?style=for-the-badge&logo=openai&logoColor=white)](#)
+[![Brain](https://img.shields.io/badge/AI%20Brain-Claude%20Opus%204.6-74aa9c?style=for-the-badge&logo=anthropic&logoColor=white)](#)
 [![SOL](https://img.shields.io/badge/Chain-Solana-9945ff?style=for-the-badge&logo=solana&logoColor=white)](#)
+[![BSC](https://img.shields.io/badge/Chain-BSC-f0b90b?style=for-the-badge&logo=binance&logoColor=black)](#)
+[![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-ff6b35?style=for-the-badge)](#)
 [![Scanner](https://img.shields.io/badge/Scanner-Birdeye%20%2B%20DexScreener-00c2ff?style=for-the-badge)](#)
 [![Telegram](https://img.shields.io/badge/Alerts-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#license)
 
-> **KIBBY TRADER** runs 24/7 — scanning Birdeye, DexScreener & Pump.fun every 10 minutes,  
-> reasoning through market data with GPT-4o / Claude Opus 4.6, executing trades on Solana, and sending live alerts to Telegram.
+> **ENIZZY TRADER** runs 24/7 — scanning Birdeye, DexScreener & Pump.fun every 10 minutes across **Solana and BSC**,  
+> reasoning through market data with **Claude Opus 4.6** via **OpenClaw**, executing trades autonomously, and sending live alerts to Telegram.
 
 <br/>
 
@@ -28,30 +30,31 @@
 ## What It Does
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║                   KIBBY TRADER — Every 10 min               ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║  📡  SCAN                                                    ║
-║      ├── Birdeye       →  token analytics & new listings     ║
-║      ├── DexScreener   →  top boosted tokens                 ║
-║      └── Pump.fun      →  trending memecoins                 ║
-║                                  │                           ║
-║  🧠  THINK                       ▼                           ║
-║      GPT-4o / Claude Opus 4.6 analyzes:                      ║
-║      · price action   · liquidity depth                      ║
-║      · volume spike   · token age & holders                  ║
-║      · risk score     · entry / exit signal                  ║
-║                                  │                           ║
-║  💰  ACT                         ▼                           ║
-║      BUY  ──▶  Jupiter Aggregator  ──▶  Solana Mainnet       ║
-║      SELL ──▶  Jupiter Aggregator  ──▶  Solana Mainnet       ║
-║      HOLD ──▶  update memory & wait next cycle               ║
-║                                  │                           ║
-║  📊  LOG                         ▼                           ║
-║      Event log (JSONL)  ──▶  SSE stream  ──▶  Live UI        ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════╗
+║              ENIZZY TRADER — Every 10 min                           ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  📡  SCAN              Solana                    BSC                 ║
+║      ├── Birdeye    →  token analytics      PancakeSwap pairs        ║
+║      ├── DexScreener →  top boosts          BSC trending tokens      ║
+║      └── Pump.fun   →  new launches         BEP-20 memecoins         ║
+║                                  │                                   ║
+║  🧠  THINK                       ▼                                   ║
+║      Claude Opus 4.6  (via OpenClaw) analyzes:                       ║
+║      · price action      · liquidity depth   · volume spike          ║
+║      · token age         · holder count      · smart money flow      ║
+║      · cross-chain risk  · entry signal      · exit strategy         ║
+║                                  │                                   ║
+║  💰  ACT                         ▼                                   ║
+║      SOL  →  Jupiter Aggregator  →  Solana Mainnet                   ║
+║      BSC  →  PancakeSwap Router  →  BNB Smart Chain                  ║
+║      HOLD →  update memory & wait next cycle                         ║
+║                                  │                                   ║
+║  📊  LOG                         ▼                                   ║
+║      Event log (JSONL)  ──▶  SSE stream  ──▶  Live UI                ║
+║      Telegram alerts   ──▶  instant trade notifications              ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 No human needed. Fully autonomous.
@@ -62,13 +65,15 @@ No human needed. Fully autonomous.
 
 | Layer | Technology |
 |---|---|
-| AI Brain | GPT-4o / Claude Opus 4.6 via Vercel AI SDK |
-| Blockchain | Solana — Jupiter aggregator swaps |
-| Scanner | Birdeye + DexScreener + Pump.fun |
-| Backend | Node 22 + TypeScript + Hono |
-| Frontend | React 18 + Vite 5 + Framer Motion |
-| Deploy | Railway (backend) + Vercel (frontend) |
-| Realtime | Server-Sent Events (SSE) |
+| 🧠 AI Brain | **Claude Opus 4.6** via **OpenClaw** |
+| ⛓️ Chains | **Solana Mainnet** + **BNB Smart Chain** |
+| 🔄 Execution | Jupiter Aggregator (SOL) · PancakeSwap (BSC) |
+| 📡 Scanner | Birdeye · DexScreener · Pump.fun |
+| 🖥️ Backend | Node 22 + TypeScript + Hono |
+| 🌐 Frontend | React 18 + Vite 5 + Framer Motion |
+| 🚀 Deploy | Railway (backend) + Vercel (frontend) |
+| 📡 Realtime | Server-Sent Events (SSE) |
+| 🔔 Alerts | Telegram Bot |
 
 ---
 
@@ -76,54 +81,77 @@ No human needed. Fully autonomous.
 
 ```mermaid
 flowchart TD
-    style A fill:#1a1a2e,stroke:#00ff94,color:#fff
-    style E fill:#1a1a2e,stroke:#9945ff,color:#fff
-    style F fill:#1a1a2e,stroke:#9945ff,color:#fff
-    style G fill:#1a1a2e,stroke:#444,color:#aaa
+    style UI fill:#0d1117,stroke:#00ff94,color:#00ff94
+    style BRAIN fill:#0d1117,stroke:#a855f7,color:#a855f7
+    style SOL_EXEC fill:#0d1117,stroke:#9945ff,color:#fff
+    style BSC_EXEC fill:#0d1117,stroke:#f0b90b,color:#fff
+    style LOG fill:#0d1117,stroke:#444,color:#888
 
-    A([🌐 Web UI / Vercel]) -->|SSE live stream| B
+    UI([🌐 Live Dashboard / Vercel\nSSE real-time stream]) -->|events| BACK
 
-    subgraph BACKEND [" 🖥️  Hono Server — Railway :3002 "]
-        B[API Layer] --> C[Trading Loop\n⏱ every 10 min]
-        B --> H[💬 Chat Interface]
+    subgraph BACK ["🖥️  Hono Server — Railway"]
+        BACK_API[API Layer] --> LOOP[Trading Loop ⏱ 10 min]
+        BACK_API --> CHAT[💬 Chat Interface]
     end
 
-    subgraph SCANNER [" 📡  Multi-Source Scanner "]
-        D1[🦅 Birdeye\ntoken analytics & listings]
-        D2[📈 DexScreener\ntop boosts]
-        D3[🐸 Pump.fun\ntrending memecoins]
+    subgraph SCAN ["📡  Multi-Source Scanner"]
+        S1[🦅 Birdeye\nSolana analytics]
+        S2[📈 DexScreener\nSOL + BSC boosts]
+        S3[🐸 Pump.fun\nnew launches]
     end
 
-    C --> SCANNER
-    D1 & D2 & D3 -->|token list + metrics| E
+    LOOP --> SCAN
+    S1 & S2 & S3 -->|token data + metrics| BRAIN
 
-    subgraph BRAIN [" 🧠  AI Brain "]
-        E[GPT-4o / Claude Opus 4.6\nprice · liquidity · volume · risk]
+    subgraph BRAIN ["🧠  AI Brain — Claude Opus 4.6"]
+        OC[⚡ OpenClaw\nAPI Gateway]
+        OC --> CLAUDE[Claude Opus 4.6\nprice · liquidity · risk · signal]
     end
 
-    E -->|BUY / SELL / HOLD| F
+    CLAUDE -->|SOL signal| SOL_EXEC
+    CLAUDE -->|BSC signal| BSC_EXEC
 
-    subgraph EXECUTION [" 💰  Execution "]
-        F[Jupiter Aggregator\nSolana Mainnet]
+    subgraph SOL_EXEC ["💜  Solana Execution"]
+        JUP[Jupiter Aggregator\nSolana Mainnet]
     end
 
-    F -->|tx signature| G[(Event Log\nJSONL)]
-    G -->|push events| B
+    subgraph BSC_EXEC ["💛  BSC Execution"]
+        CAKE[PancakeSwap Router\nBNB Smart Chain]
+    end
+
+    JUP & CAKE -->|tx signature| LOG[(📋 Event Log JSONL)]
+    LOG --> BACK_API
+    LOG --> TG[📲 Telegram Alerts]
 ```
 
 ---
 
-## AI Brain
+## AI Brain — Claude Opus 4.6 via OpenClaw
 
-KIBBY TRADER uses **GPT-4o** and **Claude Opus 4.6** with a structured tool loop — switchable via env var:
+ENIZZY TRADER uses **Claude Opus 4.6** as its sole reasoning engine, accessed through **OpenClaw** — providing structured tool-use loop with persistent memory across cycles:
 
-- **`scan_tokens`** — pulls data from Birdeye (token analytics), DexScreener (top boosts), Pump.fun (trending)
-- **`get_positions`** — checks current open positions & unrealized PnL
-- **`buy_token`** — executes a Jupiter aggregator swap (SOL → token)
-- **`sell_token`** — exits a position (token → SOL) via Jupiter
-- **`recall_memory`** — reads persistent notes from previous cycles
+| Tool | What it does |
+|---|---|
+| `scan_tokens` | Pulls data from Birdeye, DexScreener, Pump.fun across SOL + BSC |
+| `get_positions` | Checks open positions + unrealized PnL on both chains |
+| `buy_token_sol` | Jupiter aggregator swap on Solana mainnet |
+| `buy_token_bsc` | PancakeSwap execution on BNB Smart Chain |
+| `sell_token` | Exits any position on the respective chain |
+| `recall_memory` | Reads notes from previous trading cycles |
+| `send_alert` | Pushes trade notifications to Telegram |
 
-Each cycle the agent reasons step-by-step: *"Should I enter this? What's the liquidity? What's my risk? Do I hold or exit?"*
+Each cycle Claude reasons step-by-step: *"What chain? What token? What's the liquidity? What's my risk exposure across both chains? Buy, hold or exit?"*
+
+---
+
+## Agent Wallet
+
+| Chain | Address |
+|---|---|
+| Solana | [`F5jWYuiDLTiaLYa54D88YbpXgEsA6NKHzWy4SN4bMYjt`](https://solscan.io/account/F5jWYuiDLTiaLYa54D88YbpXgEsA6NKHzWy4SN4bMYjt) |
+| BSC | configured via `BSC_PRIVATE_KEY` env var |
+
+Every trade is executed from this wallet. Every transaction is public and verifiable on-chain.
 
 ---
 
@@ -133,24 +161,22 @@ Each cycle the agent reasons step-by-step: *"Should I enter this? What's the liq
 |---|---|
 | Cycle interval | 10 minutes |
 | Scanner sources | Birdeye + DexScreener + Pump.fun |
-| Swap router | Jupiter Aggregator |
-| Network | Solana Mainnet |
-| AI models | GPT-4o / Claude Opus 4.6 (switchable) |
+| Solana router | Jupiter Aggregator |
+| BSC router | PancakeSwap v3 |
+| AI model | Claude Opus 4.6 (OpenClaw) |
 | Auto-trading | ✅ enabled by default |
-| Guard checks | Position size + liquidity + cooldown |
+| Guard checks | Position size · liquidity · cooldown · cross-chain exposure |
 
 ---
 
 ## Live Dashboard
 
-The UI streams live data from the agent in real-time via SSE:
-
 | Tab | What you see |
 |---|---|
-| Overview | Wallet balance, PnL, agent status |
-| Positions | Open trades with unrealized PnL |
+| Overview | Wallet balance (SOL + BSC), PnL, agent status |
+| Positions | Open trades with unrealized PnL per chain |
 | Scanner | Tokens currently being analyzed |
-| Brain | GPT-4o / Claude Opus 4.6 reasoning log |
+| Brain | Claude Opus 4.6 reasoning log |
 | Event Log | Full event stream |
 | Config | Agent parameters |
 | Telegram | Live trade alerts & notifications |
@@ -166,19 +192,29 @@ The UI streams live data from the agent in real-time via SSE:
 
 ```bash
 # Prerequisites: Node.js 22+
-git clone https://github.com/JunaidAtta-ai/Miles_Trader
-cd Miles_Trader
+git clone https://github.com/nur1kmm/enizzy-trader
+cd enizzy-trader
 npm install
 ```
 
 Create a `.env` file:
 
 ```env
-OPENAI_API_KEY=sk-...
+# AI
+ANTHROPIC_API_KEY=sk-ant-...
+OPENCLAW_API_KEY=your-openclaw-key
+AI_MODEL=claude-opus-4-6
+
+# Solana
 SOLANA_PRIVATE_KEY=your_base58_private_key
 SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
 SOLANA_AUTO_TRADING=true
-AI_MODEL=gpt-4o          # or: claude-opus-4-6
+
+# BSC
+BSC_PRIVATE_KEY=your_bsc_private_key
+BSC_RPC_URL=https://bsc-dataseed.binance.org
+BSC_AUTO_TRADING=true
+
 PORT=3002
 ```
 
@@ -190,8 +226,6 @@ npx tsx src/main.ts
 cd ui && npm install && npm run dev
 ```
 
-Open [localhost:3002](http://localhost:3002)
-
 </details>
 
 <details>
@@ -200,7 +234,7 @@ Open [localhost:3002](http://localhost:3002)
 **Backend (Railway):**
 1. Connect GitHub repo to Railway
 2. Railway auto-detects `Dockerfile`
-3. Set env vars: `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `SOLANA_PRIVATE_KEY`, `AI_MODEL=gpt-4o` (or `claude-opus-4-6`), `SOLANA_AUTO_TRADING=true`
+3. Set env vars from `.env.example`
 
 **Frontend (Vercel):**
 1. Connect `ui/` subfolder to Vercel
@@ -215,17 +249,20 @@ Open [localhost:3002](http://localhost:3002)
 
 | Variable | Required | Description |
 |---|---|---|
-| `OPENAI_API_KEY` | ✅ | GPT-4o API key |
-| `ANTHROPIC_API_KEY` | optional | Claude Opus 4.6 API key |
+| `ANTHROPIC_API_KEY` | ✅ | Claude Opus 4.6 API key |
+| `OPENCLAW_API_KEY` | ✅ | OpenClaw gateway key |
 | `SOLANA_PRIVATE_KEY` | ✅ | Base58 Solana wallet private key |
-| `SOLANA_RPC_URL` | optional | Custom RPC (default: mainnet) |
-| `AI_MODEL` | optional | Model override: `gpt-4o` or `claude-opus-4-6` |
-| `SOLANA_AUTO_TRADING` | optional | Enable auto-trading (default: `true`) |
+| `BSC_PRIVATE_KEY` | ✅ | BNB Smart Chain wallet private key |
+| `SOLANA_RPC_URL` | optional | Custom Solana RPC |
+| `BSC_RPC_URL` | optional | Custom BSC RPC |
+| `AI_MODEL` | optional | Default: `claude-opus-4-6` |
+| `SOLANA_AUTO_TRADING` | optional | Enable Solana trading (default: `true`) |
+| `BSC_AUTO_TRADING` | optional | Enable BSC trading (default: `true`) |
 | `SOLANA_TRADING_INTERVAL_MINUTES` | optional | Cycle interval (default: `10`) |
+| `BIRDEYE_API_KEY` | optional | Birdeye token analytics key |
+| `TELEGRAM_BOT_TOKEN` | optional | Telegram bot token |
+| `TELEGRAM_CHAT_ID` | optional | Telegram chat ID for alerts |
 | `PORT` | optional | HTTP port (default: `3002`) |
-| `BIRDEYE_API_KEY` | optional | Birdeye API key for token data |
-| `TELEGRAM_BOT_TOKEN` | optional | Telegram bot token for trade alerts |
-| `TELEGRAM_CHAT_ID` | optional | Telegram chat ID to send alerts to |
 
 ---
 
@@ -244,12 +281,14 @@ src/
 │   ├── event-log.ts           # Append-only JSONL event bus
 │   └── tool-center.ts         # Tool registry
 ├── extension/
-│   ├── memecoin-scanner/      # Birdeye + DexScreener + Pump.fun
+│   ├── memecoin-scanner/      # Birdeye + DexScreener + Pump.fun (SOL + BSC)
 │   ├── solana-trading/        # Jupiter swap execution
-│   └── brain/                 # Memory + persistent state
+│   ├── bsc-trading/           # PancakeSwap execution
+│   └── brain/                 # Claude Opus 4.6 + OpenClaw + memory
 ├── task/
 │   └── trading-loop/          # 10-min autonomous cycle
 ├── connectors/
+│   ├── telegram/              # Trade alert notifications
 │   └── web/                   # Hono HTTP + SSE connector
 └── plugins/
     └── http.ts                # /health endpoint
@@ -261,7 +300,7 @@ ui/
 │   ├── hooks/useSSE.ts        # Live event stream hook
 │   └── api.ts                 # REST client
 └── public/
-    └── logo.png               # MILES TRADER logo
+    └── logo.png
 ```
 
 </details>
@@ -277,7 +316,7 @@ ui/
 
 ## License
 
-MIT © 2026 Kibby Trader
+MIT © 2026 Enizzy Trader
 
 ---
 
